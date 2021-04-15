@@ -26,5 +26,5 @@
       Enter password: "{{ grub_password} }"
       Confirm password: "{{ grub_password }}"
   
-  - name: Verify
+  - name: Recreate the grub config with grub2-mkconfig
     command: grub2-mkconfig -o /boot/grub2/grub.cfg
