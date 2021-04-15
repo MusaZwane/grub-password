@@ -6,10 +6,7 @@
   vars_file: 
   - vars.yml
 
-
-  tasks:
-
-  
+  tasks:  
   - name: Install pip
     package:
       name: /usr/bin/pip
