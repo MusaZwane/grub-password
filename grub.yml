@@ -1,1 +1,16 @@
+--- 
 
+- hosts: all
+  gather_facts: no
+  user: root
+
+  tasks:
+  - name: Create a boot password
+    expect:  
+     command: grub2-setpassword
+     responses:
+      Enter password: redhat
+      Reenter password: redhat
+  
+  - name: Verify
+    command: grub2-mkconfig -o /boot/grub2/grub.cfg
