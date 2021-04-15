@@ -8,6 +8,17 @@
 
 
   tasks:
+
+  
+  - name: Install pip
+    package:
+      name: /usr/bin/pip
+      state: latest
+
+  - name: Install the pexpect module
+    pip:
+      name: pexpect
+  
   - name: Create a boot password
     expect:  
      command: grub2-setpassword
