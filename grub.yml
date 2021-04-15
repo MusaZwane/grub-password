@@ -24,7 +24,7 @@
      command: grub2-setpassword
      responses:
       Enter password: "{{ grub_password} }"
-      Reenter password: "{{ grub_password }}"
+      Confirm password: "{{ grub_password }}"
   
   - name: Verify
     command: grub2-mkconfig -o /boot/grub2/grub.cfg
