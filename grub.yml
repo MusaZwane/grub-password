@@ -3,7 +3,7 @@
 - hosts: all
   gather_facts: no
   user: root
-  vars_file: 
+  vars_files: 
   - vars.yml
 
   tasks:  
