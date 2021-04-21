@@ -20,7 +20,7 @@
     expect:  
      command: grub2-setpassword
      responses:
-      Enter password: "{{ grub_password} }"
+      Enter password: "{{ grub_password }}"
       Confirm password: "{{ grub_password }}"
   
   - name: Recreate the grub config with grub2-mkconfig
